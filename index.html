@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>きりぬきえほん</title>
+    <meta name="description" content="きりぬきえほん">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'jmi5jop',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+        (function(d) {
+            var config = {
+                kitId: 'jmi5jop',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+</head>
+<body>
+    <div class="smp">
+        <p>
+            スマホは<br>
+            よこにしてね
+        </p>
+    </div>
+
+    <div class="kotei">
+        <!-- ハッシュタグ -->
+        <div class="geikoten">#芸工展</div>
+        <div class="fullush">#FULLUSH</div>
+
+        <!-- 両端 -->
+        <img class="girlL_img" src="girl_l.svg">
+        <img class="girlR_img" src="girl_r.svg">
+    </div>
+
+        <!-- トップ -->
+        <section class="box">
+            <!-- <img class="toplogo_img" src="top_logo.png"> -->
+            <video class="toplogo_img" src="top_logo.mp4" playsinline autoplay muted></video>
+            <img class="scroll_img" src="scroll.svg">
+        </section>
+
+        <!-- メニュー -->
+        <!-- モーダルウィンドウ -->
+        <section class="box">
+            <div class="menu_maru"></div>
+            <div class="menu_text">
+                <img class="menu_anime" src="select.svg" alt="">
+            </div>
+            
+            <a class="btn_link js-modal-open" href="" data-target="kgy">
+                <img id="kgy_btn" class="k_button" src="k_button.svg" alt="">
+            </a>
+
+            <a class="btn_link js-modal-open" href="" data-target="jns">
+                <img class="j_button" src="j_button.svg" alt="">
+            </a>
+
+            <!-- かぐやひめ -->
+            <div id="kgy" class="modal js-modal">
+                <div class="modal__content">
+                    <div class="menu_maru"></div>
+                    <div class="k_text">
+                        <img class="menu_anime" src="k_text.svg" alt="">
+                    </div>
+
+                    <a class="btn_link" href="kaguyahime.html">
+                        <img class="k_button2" src="k_button.svg" alt="">
+                    </a>
+
+                    <a class="js-modal-close" href="">
+                        <img class="back_btn" src="back.svg" alt="">
+                    </a>
+
+                    <img class="girlL_img2" src="girl_l.svg">
+                    <img class="hime_img" src="hime.svg">
+                </div>
+            </div>
+
+            <!-- じゅうにし -->
+            <div id="jns" class="modal js-modal">
+                <div class="modal__content">
+                    <div class="menu_maru"></div>
+                    <div class="j_text">
+                        <img class="menu_anime" src="j_text.svg" alt="">
+                    </div>
+
+                    <a class="btn_link" href="junishi.html">
+                        <img class="j_button2" src="j_button.svg" alt="">
+                    </a>
+
+                    <a class="js-modal-close" href="">
+                        <img class="back_btn" src="back.svg" alt="">
+                    </a>
+
+                    <img class="mouse_img" src="mouse.svg">
+                    <img class="girlR_img2" src="girl_r.svg">
+                </div>
+            </div>
+
+        </section>
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

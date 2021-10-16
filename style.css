@@ -1,0 +1,332 @@
+/* 横向きの時 */
+@media (orientation: landscape) {
+    .smp{
+        display: none;
+    }
+
+    body{
+        width: 100vw;
+        margin: 0;
+        background-color: #F7F8F8;
+    }
+
+    section{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: "Tsukushi B Round Gothic"; */
+        font-family: fot-tsukubrdgothic-std, sans-serif;
+        font-size: 20px;
+        scroll-snap-align: start;
+    }
+
+    /* ハッシュタグ：FULLUSH */
+    .fullush{
+        position: fixed;
+        /* width: 5vh; */
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        font-size: 5vh;
+        font-weight: 700;
+        color: #D94423;
+        transform: rotate(90deg);
+        top: 15vh;
+        left: -5vh;
+        z-index: 3;
+    }
+    /* ハッシュタグ：芸工展 */
+    .geikoten{
+        position: fixed;
+        /* height: 5vh; */
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        font-size: 5vh;
+        font-weight: 700;
+        color: #D94423;
+        top: 3vh;
+        right: 5vh;
+        z-index: 3;
+    }
+
+    /* トップ画像 */
+    .toplogo_img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        height: 80vh;
+    }
+
+    /* 女の子 */
+    .girlL_img{
+        opacity: 0;
+        position: fixed;
+        height: 70vh;
+        bottom: 0px;
+        left: -5vw;
+        z-index: 1;
+        transition: all 0.4s ease;
+
+        animation: SlideIn_l 1s;
+        animation-delay: 7.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes SlideIn_l {
+        0% {
+        opacity: 0;/*初期状態では透明に*/
+        transform: translateX(-64px);
+        }
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    
+    .girlL_img.isSmall{
+        height: 65vh!important;
+    }
+
+    .girlR_img{
+        opacity: 0;
+        position: fixed;
+        height: 70vh;
+        bottom: 0px;
+        right: -5vw;
+        z-index: 1;
+        transition: all 0.4s ease;
+
+        animation: SlideIn_r 1s;
+        animation-delay: 7.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes SlideIn_r {
+        0% {
+        opacity: 0;/*初期状態では透明に*/
+        transform: translateX(64px);
+        }
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+
+    .girlR_img.isSmall{
+        height: 65vh!important;
+    }
+
+    /* スクロールのアイコン */
+    .scroll_img{
+        position: absolute;
+        width: 5vw;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        bottom: 0px;
+    }
+
+    /* メニュー */
+    .menu_text{
+        position: absolute;
+        width: 95vh;
+        height: 95vh;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        text-align:center;
+    }
+
+    .menu_anime{
+        animation: r1 20s linear infinite;
+    }
+    @keyframes r1 {
+        0%   { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    .menu_maru{
+        position: absolute;
+        width: 80vh;
+        height: 80vh;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        text-align:center;
+        line-height: 80px;
+        border-radius: 50%;
+        border: solid 1.5vh #D94423;
+    }
+
+    .btn_link{
+        color: #D94423;
+        text-decoration: none;
+    }
+
+    .k_button{
+        position: absolute;
+        width: 38vh;
+        top: 18%;
+        left: 31%;
+    }
+
+    .j_button{
+        position: absolute;
+        width: 38vh;
+        top: 45%;
+        left: 47%;
+    }
+
+    /* 各あらすじ */
+
+    .back_btn{
+        position: absolute;
+        height: 5vh;
+        top: 5vh;
+        left: 15vh;
+    }
+
+    .k_text{
+        position: absolute;
+        width: 75vh;
+        height: 75vh;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        text-align:center;
+    }
+
+    .k_button2{
+        position: absolute;
+        width: 38vh;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        text-align:center;
+    }
+
+    .j_text{
+        position: absolute;
+        width: 75vh;
+        height: 75vh;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        text-align:center;
+    }
+
+    .j_button2{
+        position: absolute;
+        width: 38vh;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+        text-align:center;
+    }
+
+    /* モーダルウィンドウ */
+    .modal{
+        display: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .modal__content{
+        background: #F7F8F8;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .girlL_img2{
+        position: fixed;
+        height: 65vh;
+        bottom: 0px;
+        left: -5vw;
+    }
+
+    .girlR_img2{
+        position: fixed;
+        height: 65vh;
+        bottom: 0px;
+        right: -5vw;
+    }
+    
+    .mouse_img{
+        position: fixed;
+        height: 55vh;
+        bottom: 0px;
+        left: 0px;
+        animation: SlideIn_l 1s;
+    }
+    @keyframes SlideIn_l {
+        0% {
+        opacity: 0;/*初期状態では透明に*/
+        transform: translateX(-64px);
+        }
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    
+    .hime_img{
+        position: fixed;
+        height: 68vh;
+        bottom: 0px;
+        right: -5vw;
+        animation: SlideIn_r 1s;
+    }
+    @keyframes SlideIn_r {
+        0% {
+        opacity: 0;/*初期状態では透明に*/
+        transform: translateX(64px);
+        }
+        100% {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+
+
+}
+
+/* 縦向きの時 */
+@media (orientation: portrait){
+    body{
+        width: 100vw;
+        margin: 0;
+        background-color: #F7F8F8;
+    }
+
+    p{
+        position: absolute;
+        /* font-family: "Tsukushi B Round Gothic"; */
+        font-family: fot-tsukubrdgothic-std, sans-serif;
+        font-size: 5em;
+        color: #474747;
+        text-align: center;
+        top: 40%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+    }
+
+    .box{
+        display: none;
+    }
+    .kotei{
+        display: none;
+    }
+
+    .smp{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #F7F8F8;
+        z-index: 5;
+    }
+
+}
