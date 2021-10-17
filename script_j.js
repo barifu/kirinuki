@@ -18,6 +18,6 @@ $(function() {
       section : ".box_j",
       scrollbars:"false",
       easing: "swing",
-      scrollSpeed: 500,
+      scrollSpeed: 800,
     });
 });  
