@@ -35,6 +35,6 @@ $(function() {
       section : ".box_k",
       scrollbars:"false",
       easing: "swing",
-      scrollSpeed: 500,
+      scrollSpeed: 800,
     });
 });    
