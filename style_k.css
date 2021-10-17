@@ -1,0 +1,197 @@
+/* 横向きの時 */
+@media (orientation: landscape) {
+    .smp{
+        display: none;
+    }
+    
+    body{
+        width: 100vw;
+        margin: 0;
+        background-color: #F7F8F8;
+    }
+    
+    section{
+        width: 90vw;
+        height: 100vh;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: "Tsukushi B Round Gothic"; */
+        font-family: fot-tsukubrdgothic-std, sans-serif;
+        font-size: 1.2em;
+    }
+    
+    p{
+        margin: 0 auto;
+    }
+    
+    /* トップに戻るボタン */
+    .topButton{
+        position: fixed;
+        bottom: 5vh;
+        right: 5vw;
+        text-align: center;
+        z-index: 3;
+    }
+    
+    .touButton_link{
+        color: #D94423;
+        text-decoration: none;
+    }
+    
+    .topButton_text{
+        /* font-family: "Tsukushi B Round Gothic"; */
+        font-family: fot-tsukubrdgothic-std, sans-serif;
+        font-size: 2.5vh;
+    
+    }
+    
+    .topButton_img{
+        height: 10vh;
+        margin-bottom: -10px;
+    }
+    
+    /* ハッシュタグ：FULLUSH */
+    .fullush{
+        position: fixed;
+        /* width: 5vh; */
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        font-size: 5vh;
+        font-weight: 700;
+        color: #D94423;
+        transform: rotate(90deg);
+        top: 15vh;
+        left: -5vh;
+        z-index: 3;
+    }
+    /* ハッシュタグ：芸工展 */
+    .geikoten{
+        position: fixed;
+        /* height: 5vh; */
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        font-size: 5vh;
+        font-weight: 700;
+        color: #D94423;
+        top: 3vh;
+        right: 5vh;
+        z-index: 3;
+    }
+    
+    /* タイトルロゴ */
+    .title_img{
+        position: absolute;
+        height: 50vh;
+        top: 50%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+    }
+
+    /* 絵本の配置について */
+    .k_flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .k_flex:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    
+    .k_image{
+        width: 40vw;
+    }
+    
+    .k_text{
+        width: 40vw;
+        text-align: left;
+        color: #474747;
+    }  
+    
+    /* アニメーション */
+    .css-fade5{
+        opacity: 0;
+    }
+    
+    .css-fade5.active{
+        opacity: 0;
+        animation-name:fade-in5;
+        animation-duration:1s; 
+        /* animation-timing-function: ease-out;  */
+        animation-delay:0; 
+        /* animation-iteration-count:1;  */
+        /* animation-direction:normal; */
+        animation-fill-mode: forwards; 
+        /* transition: 1s; */
+    }
+    
+      @keyframes fade-in5 {
+        0% {opacity: 0; transform: translate3d(0,30px,0);}
+        100% {opacity: 1; transform: translate3d(0,0,0);}
+      }
+      
+    .anm01{
+        animation-delay: 1s;
+    }
+    .anm02{
+        animation-delay: 2s;
+    }
+    .anm03{
+        animation-delay: 3s;
+    }
+    .anm04{
+        animation-delay: 4s;
+    }
+    .anm05{
+        animation-delay: 5s;
+    }
+    .anm06{
+        animation-delay: 6s;
+    }
+    .anm07{
+        animation-delay: 7s;
+    }
+    .anm08{
+        animation-delay: 8s;
+    }
+    .anm09{
+        animation-delay: 9s;
+    }
+    
+}
+/* 縦向きの時 */
+@media (orientation: portrait){
+    body{
+        width: 100vw;
+        margin: 0;
+        background-color: #F7F8F8;
+    }
+
+    p{
+        position: absolute;
+        /* font-family: "Tsukushi B Round Gothic"; */
+        font-family: fot-tsukubrdgothic-std, sans-serif;
+        font-size: 5em;
+        color: #474747;
+        text-align: center;
+        top: 40%;
+        left: 50%;
+        transform : translate(-50%,-50%);
+    }
+
+    .box{
+        display: none;
+    }
+    .kotei{
+        display: none;
+    }
+
+    .smp{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #F7F8F8;
+        z-index: 5;
+    }
+
+}
